@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Pixelify+Sans&display=swap");
+
+* {
+  font-family: "Kanit", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.screen {
+  max-width: 350px;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #000;
+  min-height: 80px;
+  padding: 10px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: right;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.screen .current {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.calc-btn-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.calc-btn {
+  padding: 10px 30px;
+  background-color: #27374d;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2.5rem;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  border: solid 1px #000;
+}
+
+.equal {
+  background-color: #0091ff;
+}
+
+.calc-btn:hover {
+  background-color: #304562;
+}
+
+.calc-btn:active {
+  background-color: #1f1d1d;
+  z-index: 1;
+}
